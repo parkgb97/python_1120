@@ -5,7 +5,7 @@
 
 
 from webdriver_manager.chrome import ChromeDriverManager
-from selenium import webdriver
+from selenium_test import webdriver
 
 driver = webdriver.Chrome(ChromeDriverManager().install())
 
@@ -18,7 +18,7 @@ driver.implicitly_wait(time_to_wait=10)
 # In[2]:
 
 
-from selenium.webdriver.common.keys import Keys
+from selenium_test.webdriver.common.keys import Keys
 
 elem = driver.find_element_by_css_selector("#sbtc > div > div.a4bIc > input")
 elem.send_keys("바다")
